@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адмінка</title>
+    <link rel="stylesheet" href="./styles/admin.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+    <header class="header-top">
+        <div class="header-top-container container">
+            <nav class="header-nav">
+                <a href="./admin.html" class="nav-logo">
+                    <div class="logo-container">
+                        <svg class="logo" width="72" height="48">
+                            <use href="./image/icon.svg#icon-solvensy"></use>
+                        </svg>
+                    </div>
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./admin.html" class="nav-link">Команда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Клієнти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Константи</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <main class="main-content">
+            <section class="emploees">
+                <div class="emploees-container container">
+                    <h2 class="emploees-form-text" >Додавання працівників</h2>
+                    <form class="add-user-form" id="add-user-form">
+                        <label class="add-user-form-label" for="username">Ім'я користувача:</label>
+                        <div class="add-user-form-wrapper">
+                            <input class="add-user-form-input" type="text" id="username" name="username" required>
+                        </div>
+                        <label class="add-user-form-label" for="password">Пароль:</label>
+                        <div class="add-user-form-wrapper">
+                            <input class="add-user-form-input" type="text" id="password" name="password" required>
+                        </div>
+                        <button class="add-user-form-button" type="submit">+</button>
+                    </form>
+                </div>
+
+                    <h2>Список співробітників</h2>
+                    <table id="user-table">
+                        <thead>
+                            <tr>
+                                <th>Ім'я користувача</th>
+                                <th>Дії</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Додані співробітники будуть тут -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>

@@ -1,0 +1,72 @@
+:root {
+    box-sizing: border-box;
+    --main-color: rgba(185, 28, 28, 0.8);
+    --accent-color: #872725;
+    --font-color: rgba(75, 63, 63, 0.8);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+    color: black;
+    font-size: 18px;}
+
+h1 {
+    text-align: center;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    color: currentColor;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+       
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+section{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
