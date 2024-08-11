@@ -48,16 +48,8 @@ a
     margin-right: auto;
 }
 
-@media screen and (min-width: 375px) {
-    .container {
-       
-    }
-}
-
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
+    
 }
 
 @media screen and (min-width: 1280px) {
