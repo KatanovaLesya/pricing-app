@@ -38,7 +38,7 @@
             <section class="emploees">
                 <div class="emploees-container container">
                     <h3 id="team" class="emploees-form-text" >Додавання працівників</h3>
-                    <form class="add-user-form" id="add-user-form">
+                    <form class="add-user-form" id="add-user-form" action="/submit" method="POST">
                         <label class="add-user-form-label" for="username">Ім'я користувача:</label>
                         <div class="add-user-form-wrapper">
                             <input class="add-user-form-input" type="text" id="username" name="username" required>
@@ -51,12 +51,15 @@
                         <button class="add-user-form-button-mob" type="submit">Додати пестунчика</button>
                     </form>
                 </div>
-
-                    <h2>Список співробітників</h2>
-                    <table id="user-table">
+            </section>
+            <section class="emploees-list">
+                <div class="emploees-container container">
+                    <h3 class="emploees-form-text">Список співробітників</h3>
+                    <table class="user-table" id="user-table">
                         <thead>
                             <tr>
                                 <th>Ім'я користувача</th>
+                                <th>Пароль</th>
                                 <th>Дії</th>
                             </tr>
                         </thead>
@@ -67,6 +70,7 @@
                 </div>
             </section>
         </main>
+        <script type="module" src="/src/components/UserManagement.js"></script>
     </body>
 
 </html>
