@@ -161,7 +161,7 @@
     background-color: var(--accent-color);
 }
 
-table {
+.user-table {
     width: 100%;
     margin-top: 24px;
 }
@@ -185,6 +185,8 @@ th {
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
+    width: 100%;
+    margin: 5px;
 }
 
 td {
@@ -203,6 +205,9 @@ td {
     font-stretch: condensed;
     font-weight: 400;
     margin-left: 5px;
+    margin-bottom: 5px;
+    width: 110px;
+   
 }
 
 .delete-button:hover,
